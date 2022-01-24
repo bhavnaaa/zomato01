@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <title>Document</title>
+    
+    </head>
+<body>
+<style>
+
+nav
+{
+    color:"black";
+    height: 80px;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0px 50px;
+    align-items: center;
+    background-color: #FFFBF7;
+    position: relative;
+      
+}
+
+nav ul 
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    line-height: 80px;  
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 18px;
+    color:black;
+    font-weight:600;
+    
+    
+
+} 
+
+ #section1 .button:hover
+{ 
+     color :#0a58ca;
+
+}
+nav span a
+
+{
+    color:black;
+    font-style:italic;
+    text-decoration: none;
+}
+span
+{
+    color: black;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+#section2 h1
+{
+color:white;
+font-size:80px;
+}
+nav ul  li
+{
+    padding-right:35px;
+    display: inline-block;
+    
+    font-size: 20px;
+}
+#section2
+{
+background-image: url("img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#section2 p
+{
+font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+#section2 select
+{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border: none;
+    font-size: 18px;
+    border-right: 3px solid black;
+}
+#section2 input
+{
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border: none;
+}
+.over
+{
+    background-color: rgba(0, 0, 0, 0.452);
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:250px;
+} 
+#section3
+{
+    padding: 50px 0px;
+}
+#section3 p
+{
+    font-size: 20px;
+
+} 
+#section3 .boxes img
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+#section3 .boxes p
+{
+text-align:center;
+
+}
+#section3 .boxes p a
+{font-size:20px;
+    font-weight:400;
+    text-decoration:none;
+color:black;
+}
+
+#section3 .boxes
+{
+margin:10px 0px;
+}
+#section3 .boxes:hover
+{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+#section h2
+{
+    font-size:30px;
+}
+#sec1
+{
+    
+    margin-left:50px;
+}
+#section3 .boxes
+{
+    padding-bottom:  10px ;
+    box-shadow: 0px 0px 2px 2px rgb(206, 206, 206);
+    
+     
+    border-radius: 20px;
+    transition: all 1s;
+    width: 100%;
+    
+}
+#section1 .button1:hover
+{
+    color:#0a58ca;
+}
+#section1 .row 
+{
+    display:flex;
+    justify-content:space-between;
+}
+nav  #check
+
+{
+    display:none;
+}
+nav label
+{
+    display:none;
+    position:absolute;
+    right:20px;
+}
+nav label i
+{
+    font-size:25px;
+    cursor:pointer;
+}
+.img-index
+{
+    width:400px;
+}
+@media only  screen and (max-width:420px){
+
+
+nav
+{
+padding:0px 20px;
+height:60px;
+
+}
+nav label
+{
+    display:block;
+}
+nav ul {
+    position:absolute;
+    top:62px;
+    width:100%;
+    background-color: rgba(0,0,0,0.863);
+    left:-100%;
+    height:100vh;
+    transition:all 2s;
+}
+nav ul li a
+{
+    display:block;
+    justify-content: center;
+    text-align:center;
+    margin:20px 0px;
+    color:white;
+}
+
+#check:checked  ~ul 
+{
+    left:0;
+}
+.img-index
+{
+    width:100%;
+}
+}
+
+
+#section3 .row{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+    <body>
+
+    
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars"></i></label>
+    <span><a href="index.html"><i>Zomato</i></a></span>
+            
+            <ul>
+                <li>
+                    <a href >Add Restaurant</a>
+    
+                </li>
+                <li>
+                  <a href>  SignIn</a> 
+                </li>
+                <li>
+                    <a href> SignUp</a>
+                </li>
+            </ul>
+        </nav>
+        
+            <section id="section2">
+                <div class="over">
+                    <h1><i>Zomato</i></h1>
+                    <p>Discover the best food &amp; drinks in Mumbai</p>
+                    <form>
+                        <select>
+                            <optgroup>
+                                <option value="">Select Location</option>
+                            <option value="">Mumbai</option>
+                            <option value="">Delhi</option>
+                            <option value="">Bangalore</option>
+                            <option value="">Hyderabad</option>
+                            <option value="">Chennai</option>
+                            <option value="">Kolkata</option>
+                            <option value="">Jaipur</option>
+                            <option value="">Lucknow</option>
+                            </optgroup>
+                            
+                        </select>
+                        
+                        <input type="text" placeholder="Search for restaurant, cuisine or dish">
+                    </form>
+                </div>
+            </section>
+        </div>
+        <div id="section3">
+            <div id="sec1">
+                <h2>Quick Search</h2>
+                <p>
+                    Discover Resturant By Meal
+                </p>
+        </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx1.jpg" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 1</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx2.jpg" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 2</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx3.jpg" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 3</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx4.jpg" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 4</a></p>
+                    </div>
+                </div>
+                
+                
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx5.webp" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 5</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx6.webp" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 6</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx7.webp" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 7</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="boxes">
+                        <a href="page.html"> <img src="bx.8.jfif" alt=""></a>
+                        <p><a href="page.html" class="bx"> Food Category 8</a></p>
+                    </div>
+                </div>
+                 </div>
+            </div>
+            
+        </body>
+        </html>
+
+
+    
